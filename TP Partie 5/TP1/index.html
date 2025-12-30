@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Articles API</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>ARPI</h1>
+
+    <nav class="navbar">
+      <!-- Bouton burger pour mobile -->
+      <button class="burger" id="burger-menu" aria-label="Ouvrir le menu" aria-expanded="false">
+        &#9776;
+      </button>
+
+      <!-- Menu de navigation -->
+      <ul class="nav-links" id="nav-menu">
+        <li><a href="http://127.0.0.1:5500/index.html">Accueil</a></li>
+        <li><a href="#">Articles</a></li>
+        <li><a href="http://127.0.0.1:5500/Contact.html">Contact</a></li>
+      </ul>
+
+      <!-- Barre de recherche -->
+      <div class="search-container">
+        <input type="text" id="search" placeholder="Rechercher un article..." aria-label="Rechercher">
+      </div>
+    </nav>
+
+    <!-- Bouton de changement de thème -->
+    <button id="theme-toggle" aria-label="Changer le thème" title="Changer le thème">
+    </button>
+  </header>
+
+  <main>
+    <!-- Conteneur pour les articles -->
+    <div id="posts-container">
+      <!-- Articles générés via JavaScript ou API -->
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Mon Site. Tous droits réservés.</p>
+
+    <!-- Réseaux sociaux -->
+    <div class="social-media">
+      <a href="#" aria-label="Facebook" title="Facebook">Facebook</a>
+      <a href="#" aria-label="Twitter" title="Twitter">Twitter</a>
+      <a href="#" aria-label="Instagram" title="Instagram">Instagram</a>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="TP3, HTML, exercice, web, apprentissage">
+    <meta name="description" content="Qui est goku">
+    <meta name="author" content="Cyprien Bidaud">
+    <title>DBZ Wekipedia</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+        }
+        img {
+            width: 200px;
+            height: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>TP3 - Création d'une page HTML</h1>
+        <h2>Sommaire</h2>
+        <ol>
+            <li><a href="#section1">Introduction</a></li>
+            <li><a href="#section2">Images</a></li>
+            <li><a href="#section3">Liens externes</a></li>
+            <li><a href="#section4">Tableau</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ol>
+        
+        <h2 id="section1">Introduction</h2>
+        <p>Bienvenue sur cette page de démonstration du TP3. <strong>HTML</strong> est un langage essentiel pour la création de pages web.</p>
+        <p>Ceci est un exemple de <em>contenu textuel</em> avec des retours à la ligne et des <u>choses en évidences</u>.</p>
+        
+        <h2 id="section2">Images</h2>
+        <p>Cliquez sur l'image pour l'afficher en grand.</p>
+        <a href="https://e1.pngegg.com/pngimages/289/5/png-clipart-son-goku-render-extraction-son-goku.png" target="_blank">
+            <img src="https://e1.pngegg.com/pngimages/289/5/png-clipart-son-goku-render-extraction-son-goku.png" alt="Goku">
+        </a>
+        
+        <h2 id="section3">Liens externes</h2>
+        <ul>
+            <li><a href="https://fr.dokkan.wiki" target="_blank">Dokkan Wiki</a></li>
+            <li><a href="https://fr.wikipedia.org/wiki/Son_Goku_(Dragon_Ball)" target="_blank">Wikipedia</a></li>
+        </ul>
+        
+        <h2 id="section4">Type de fusion</h2>
+        <table>
+            <tr>Dance de la Fusion</tr> 
+			<td colspan="2">Dance de la fusion </td>
+			<tr>
+                <td>Goku </td>
+                <td>Vegeta</td>
+            </tr>
+            <tr>
+                <td colspan="2">Gogeta</td>
+            </table>
+			</tr>
+			<table>
+			<td colspan="2">Fusion Potara</td>
+			<tr>
+                <td>Goku</td>
+                <td>Vegeta</td>
+            </tr>
+            <tr>
+                <td colspan="2">Vegetto</td>
+            </tr>
+        </table>
+        
+        <h2 id="contact">Contact</h2>
+        <p>Pour me contacter, envoyez un email à <a href="mailto:chevalier@chris-freelance.com">chevalier@chris-freelance.com</a>.</p>
+    </div>
+</body>
+</html>

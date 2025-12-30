@@ -1,0 +1,221 @@
+/* ===== Base ===== */  
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s, color 0.3s;
+  background-color: #fff;
+  color: #333;
+}
+
+h1 {
+  color: #55cc55;
+  font-size: 2em;
+  text-align: center;
+}
+
+h2 {
+  background-color: darkgreen;
+  color: #00f028;
+  font-size: 1.5em;
+  padding: 10px;
+  animation: slide 0.5s ease-in-out;
+}
+
+main {
+  padding: 20px;
+}
+
+article {
+  border-bottom: 1px solid darkgreen;
+  padding: 10px 0;
+}
+
+/* ===== Header & Nav ===== */
+header {
+  background-color: darkgreen;
+  color: white;
+  padding: 10px 20px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* Menu burger (☰ ↔ ✖) */
+.burger {
+  display: none;
+  font-size: 1.5em;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: white;
+}
+
+/* Liens de navigation */
+.nav-links a {
+  color: #38c550;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* ===== Recherche ===== */
+.search-container {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+#search {
+  padding: 5px;
+  width: 100%;
+  max-width: 250px;
+  border-radius: 10px;
+}
+
+/* ===== Thème toggle ===== */
+#theme-toggle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid darkgreen;
+  background-color: lightblue;
+  cursor: pointer;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+}
+
+#theme-toggle:hover {
+  animation: rotate 0.5s linear;
+}
+
+/* ===== Mode sombre ===== */
+body.dark-mode {
+  background-color: #222;
+  color: #eee;
+}
+
+body.dark-mode h1 {
+  color: #90ee90;
+}
+
+body.dark-mode h2 {
+  background-color: #111;
+  color: #90ee90;
+}
+
+body.dark-mode header,
+body.dark-mode footer {
+  background-color: #111;
+  color: white;
+}
+
+body.dark-mode .nav-links a {
+  color: #90ee90;
+}
+
+body.dark-mode article {
+  border-bottom: 1px solid #444;
+}
+
+body.dark-mode #theme-toggle {
+  background-color: black;
+  border: 1px solid lightgreen;
+  color: white;
+}
+
+/* ===== Footer ===== */
+footer {
+  background-color: darkgreen;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+}
+
+/* ===== Responsive ===== */
+@media screen and (max-width: 768px) {
+  .burger {
+    display: block; /* Afficher le bouton burger sur les petits écrans */
+  }
+
+  /* Menu de navigation caché par défaut */
+  .nav-links {
+    display: none; 
+    flex-direction: column; /* Afficher les éléments de manière verticale */
+    width: 100%;
+    background-color: darkgreen;
+    padding: 10px 0;
+    position: absolute;
+    top: 100%; /* Placer sous le bouton burger */
+    left: 0;
+    z-index: 100;
+  }
+
+  /* Afficher le menu quand le burger est activé */
+  .nav-links.active {
+    display: flex; 
+  }
+
+  /* Centrer la barre de recherche en dessous sur les petits écrans */
+  .search-container {
+    position: static;
+    margin: 10px auto;
+    text-align: center;
+  }
+}
+
+/* ===== Animations ===== */
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes vibrate {
+  0%, 100% {
+    transform: translate(0);
+  }
+  25% {
+    transform: translate(-2px, -2px);
+  }
+  50% {
+    transform: translate(2px, 2px);
+  }
+  75% {
+    transform: translate(-2px, -2px);
+  }
+}

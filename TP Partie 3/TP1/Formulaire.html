@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Formulaire</title>
+ <section>
+    <header>
+        <h1>Formulaire d'inscription</h1>
+    </header>
+    <section>
+    <form method="post">
+        <label for="name">Nom :</label><br>
+        <input type="text" id="name" placeholder="Votre Nom" name="name" maxlength="10" required><br><br>
+        
+        <label for="lastname">Prénom :</label><br>
+        <input type="text" id="lastname" placeholder="Votre Prénom" name="lastname" maxlength="10"><br><br>
+        
+        <label for="email">Email :</label><br>
+        <input type="email" id="email" placeholder="Votre Email" name="email" maxlength="10"><br><br>
+        
+        <label for="password">Mot de passe :</label><br>
+        <input type="password" id="password" placeholder="Votre Mot de passe" name="password" minlength="10"><br><br>
+        
+        <label for="sexe">Selectionner un Sexe</label><br>
+        <input type="radio" id="homme" name="sexe" value="homme" checked>
+        <label for="homme">Homme</label><br>
+        <input type="radio" id="femme" name="sexe" value="femme">
+        <label for="femme">Femme</label><br>
+        <input type="radio" id="autre" name="sexe" value="autre">
+        <label for="autre">Autre</label><br>
+
+
+        <label for="loisir">Selectionner un Loisir</label>
+        <br><input type="checkbox" id="loisir1" name="loisir1" value="loisir1">
+        <label for="loisir1">Sport</label><br>
+        <input type="checkbox" id="loisir2" name="loisir2" value="loisir2">
+        <label for="loisir2">Lecture</label><br>
+        <input type="checkbox" id="loisir3" name="loisir3" value="loisir3">
+        <label for="loisir3">Musique</label><br>   
+       
+        <label for="pays">Pays de résidence :</label>
+        <select id="pays" name="pays">
+        <option value="">-- Sélectionnez un pays --</option>
+        <option value="fr">France</option>
+        <option value="be">Belgique</option>
+        <option value="ch">Suisse</option>
+        <option value="ca">Canada</option>
+        <option value="us">États-Unis</option>
+        <option value="ma">Maroc</option>
+        <option value="dz">Algérie</option>
+        <option value="tn">Tunisie</option>
+		<option value="jp">Japon</option>
+        </select>
+        <br></br> 
+        <label for="pays">Biography :</label>
+        <br>
+        <textarea id="message"  placeholder="Biography" name="message" rows="4" cols="50"></textarea>
+        <br><br>
+        <input type="submit" value="Envoyer">
+        <input type="reset" value="Réinitialiser" >
+    </section>
+</form>
+ </section>
+</body>
+</html>
