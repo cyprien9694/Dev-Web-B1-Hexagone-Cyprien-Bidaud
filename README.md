@@ -38,6 +38,7 @@ Il contient différents exercices et corrections portant sur les **bases du dév
 
 * **HTML5**
 * **CSS3**
+* **JAVASCRIPT**
 * Éditeur de code : Visual Studio Code
 
 ---
