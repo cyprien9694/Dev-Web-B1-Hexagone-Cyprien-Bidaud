@@ -23,10 +23,10 @@ Il contient différents exercices et corrections portant sur les **bases du dév
 ### 📁 TP réalisés
 
 * **TP Partie 1** : bases du HTML (structure, balises principales)
-* **TP Partie 2 / TP1** : mise en page et premières notions de CSS
-* **TP Partie 3 / TP1** : styles avancés et organisation du code
+* **TP Partie 2** : mise en page et premières notions de CSS
+* **TP Partie 3** : styles avancés et organisation du code
 * **TP Partie 4** : approfondissement CSS et structuration
-* **TP Partie 5 / TP1** : consolidation des acquis
+* **TP Partie 5** : consolidation des acquis
 
 ### ✅ Corrections
 
